@@ -9,5 +9,12 @@ This project aims to segment retinal vessels from funduscamera images. Two techn
 - image processing techqniues presented in: [An Efficient Retinal Blood Vessel Segmentation using Morphological Operations](https://www.researchgate.net/publication/329565456_An_Efficient_Retinal_Blood_Vessel_Segmentation_using_Morphological_Operations)
 - personal implementation of a deep learning techique using the fully convolutional UNet as presented in: [Retina Blood Vessel Segmentation Using A U-Net BasedConvolutional Neural Network](https://researchbank.swinburne.edu.au/file/fce08160-bebd-44ff-b445-6f3d84089ab2/1/2018-xianchneng-retina_blood_vessel.pdf)
 
+Example of the results: Original | Image Processing | UNet
 
+![Segmentation showcase](https://github.com/mtom407/retinal_segmentation/blob/main/docs/images/showcase_1.png)
+
+If you'd like to test the UNet for yourself you might want to:
+1. Get a funduscamera image (it must be cropped to the FOV cricle first) like: [example image](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Fundus_photograph_of_normal_right_eye.jpg/1200px-Fundus_photograph_of_normal_right_eye.jpg)
+2. Create a 'data' folder in the repository and save the image there as 'example_1.png'
+3. Run unet_showcase.py
 
