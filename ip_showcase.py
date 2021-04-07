@@ -28,6 +28,7 @@ def MT_processing_seg_helper(img_path):
     new_name = "segmented" + img_path.split('\\')[-1]
     save_path = os.path.join(DESTINATION, new_name)
     cv2.imwrite(save_path, segmented_img)
+    print('Saved image to: ' + save_path)
 
 # files to segment
 file_paths = [os.path.join(DIR, fname) for fname in os.listdir(DIR)]
